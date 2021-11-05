@@ -15,7 +15,7 @@ param resourceGroupName2 string = 'resourceGroup2'
 @description('A region to deploy the resource groups into')
 param location string = deployment().location
 
-module resourceGroupA './modules/resourceGroup.bicep' = {
+module resourceGroup1 './modules/resourceGroup.bicep' = {
   name: resourceGroupName1
   scope: subscription(subscriptionId1)
   params: {
@@ -24,7 +24,7 @@ module resourceGroupA './modules/resourceGroup.bicep' = {
   }
 }
 
-module resourceGroupB './modules/resourceGroup.bicep' = {
+module resourceGroup2 './modules/resourceGroup.bicep' = {
   name: resourceGroupName2
   scope: subscription(subscriptionId2)
   params: {

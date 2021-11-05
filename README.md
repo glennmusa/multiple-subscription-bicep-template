@@ -1,6 +1,6 @@
 # multiple-subscription-bicep-template
 
-This template generates a subscription scoped ARM JSON template [multipleSubscriptionDeployment.json](./multipleSubscriptionDeployment.json) that contains two `resources.
+This template generates a subscription scoped ARM JSON template [multipleSubscriptionDeployment.json](./multipleSubscriptionDeployment.json) that contains two `Microsoft.Resources/deployments` resources.
 
 The ARM JSON template [multipleSubscriptionDeployment.json](./multipleSubscriptionDeployment.json) deploys successfully into `AzureCloud`. In Azure Stack Hub, it returns a `InvalidTemplate` error.
 
